@@ -13,9 +13,12 @@
 		48FF1FDA25802CCB000B100C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FD825802CCB000B100C /* Main.storyboard */; };
 		48FF1FDC25802CDB000B100C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FDB25802CDB000B100C /* Assets.xcassets */; };
 		48FF1FDF25802CDB000B100C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FDD25802CDB000B100C /* LaunchScreen.storyboard */; };
+		48FF1FE825802D0B000B100C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FE725802D0A000B100C /* GoogleService-Info.plist */; };
+		A6BC15FEBC2ADEA2365F3E29 /* Pods_Cyberguide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DDA1D4133C8AE983F87DEC /* Pods_Cyberguide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127B4358A69FDDBED5F9A8FA /* Pods-Cyberguide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cyberguide.debug.xcconfig"; path = "Target Support Files/Pods-Cyberguide/Pods-Cyberguide.debug.xcconfig"; sourceTree = "<group>"; };
 		48FF1FCF25802CCB000B100C /* Cyberguide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cyberguide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FF1FD225802CCB000B100C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FF1FD425802CCB000B100C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		48FF1FDB25802CDB000B100C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FF1FDE25802CDB000B100C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48FF1FE025802CDB000B100C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FF1FE725802D0A000B100C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		951CBB6B417878200E7F2990 /* Pods-Cyberguide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cyberguide.release.xcconfig"; path = "Target Support Files/Pods-Cyberguide/Pods-Cyberguide.release.xcconfig"; sourceTree = "<group>"; };
+		E2DDA1D4133C8AE983F87DEC /* Pods_Cyberguide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cyberguide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BC15FEBC2ADEA2365F3E29 /* Pods_Cyberguide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		291501E28FEC7AAD790248DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2DDA1D4133C8AE983F87DEC /* Pods_Cyberguide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48FF1FC625802CCB000B100C = {
 			isa = PBXGroup;
 			children = (
 				48FF1FD125802CCB000B100C /* Cyberguide */,
 				48FF1FD025802CCB000B100C /* Products */,
+				4C1DEF20837D513C88E36B0C /* Pods */,
+				291501E28FEC7AAD790248DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,19 @@
 				48FF1FDB25802CDB000B100C /* Assets.xcassets */,
 				48FF1FDD25802CDB000B100C /* LaunchScreen.storyboard */,
 				48FF1FE025802CDB000B100C /* Info.plist */,
+				48FF1FE725802D0A000B100C /* GoogleService-Info.plist */,
 			);
 			path = Cyberguide;
+			sourceTree = "<group>";
+		};
+		4C1DEF20837D513C88E36B0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				127B4358A69FDDBED5F9A8FA /* Pods-Cyberguide.debug.xcconfig */,
+				951CBB6B417878200E7F2990 /* Pods-Cyberguide.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48FF1FE325802CDB000B100C /* Build configuration list for PBXNativeTarget "Cyberguide" */;
 			buildPhases = (
+				324E24D4F34F6BCEC37AA49D /* [CP] Check Pods Manifest.lock */,
 				48FF1FCB25802CCB000B100C /* Sources */,
 				48FF1FCC25802CCB000B100C /* Frameworks */,
 				48FF1FCD25802CCB000B100C /* Resources */,
+				2BADC88ADE8CE4FF7737FE3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FF1FDF25802CDB000B100C /* LaunchScreen.storyboard in Resources */,
+				48FF1FE825802D0B000B100C /* GoogleService-Info.plist in Resources */,
 				48FF1FDC25802CDB000B100C /* Assets.xcassets in Resources */,
 				48FF1FDA25802CCB000B100C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BADC88ADE8CE4FF7737FE3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cyberguide/Pods-Cyberguide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cyberguide/Pods-Cyberguide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cyberguide/Pods-Cyberguide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		324E24D4F34F6BCEC37AA49D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cyberguide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48FF1FCB25802CCB000B100C /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		48FF1FE425802CDB000B100C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 127B4358A69FDDBED5F9A8FA /* Pods-Cyberguide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +376,7 @@
 		};
 		48FF1FE525802CDB000B100C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 951CBB6B417878200E7F2990 /* Pods-Cyberguide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

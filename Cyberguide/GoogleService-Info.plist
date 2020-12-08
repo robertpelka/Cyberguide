@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1093609201896-bsh6outcjkc45fcavv73h8rgkoatr9uj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1093609201896-bsh6outcjkc45fcavv73h8rgkoatr9uj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDVQkUHMMUdT3iSxcwgq0h5GrM_-b_Q0N8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1093609201896</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.robertpelka.Cyberguide</string>
+	<key>PROJECT_ID</key>
+	<string>cyberguide-80ce5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cyberguide-80ce5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1093609201896:ios:d27f8490e825680b8e295d</string>
+</dict>
+</plist>
