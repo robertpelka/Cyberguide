@@ -3,31 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48409C14258238BE00835908 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48409C13258238BE00835908 /* LoginViewController.swift */; };
+		48409C1725823B2100835908 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48409C1625823B2100835908 /* RegisterViewController.swift */; };
+		48409C1A2582596D00835908 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48409C192582596D00835908 /* MainViewController.swift */; };
 		48FF1FD325802CCB000B100C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD225802CCB000B100C /* AppDelegate.swift */; };
 		48FF1FD525802CCB000B100C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD425802CCB000B100C /* SceneDelegate.swift */; };
-		48FF1FD725802CCB000B100C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD625802CCB000B100C /* ViewController.swift */; };
+		48FF1FD725802CCB000B100C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD625802CCB000B100C /* WelcomeViewController.swift */; };
 		48FF1FDA25802CCB000B100C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FD825802CCB000B100C /* Main.storyboard */; };
 		48FF1FDC25802CDB000B100C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FDB25802CDB000B100C /* Assets.xcassets */; };
 		48FF1FDF25802CDB000B100C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FDD25802CDB000B100C /* LaunchScreen.storyboard */; };
 		48FF1FE825802D0B000B100C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48FF1FE725802D0A000B100C /* GoogleService-Info.plist */; };
+		48FF200225822325000B100C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF200125822325000B100C /* Constants.swift */; };
 		A6BC15FEBC2ADEA2365F3E29 /* Pods_Cyberguide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DDA1D4133C8AE983F87DEC /* Pods_Cyberguide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		127B4358A69FDDBED5F9A8FA /* Pods-Cyberguide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cyberguide.debug.xcconfig"; path = "Target Support Files/Pods-Cyberguide/Pods-Cyberguide.debug.xcconfig"; sourceTree = "<group>"; };
+		48409C13258238BE00835908 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		48409C1625823B2100835908 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		48409C192582596D00835908 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		48FF1FCF25802CCB000B100C /* Cyberguide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cyberguide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FF1FD225802CCB000B100C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FF1FD425802CCB000B100C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48FF1FD625802CCB000B100C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		48FF1FD625802CCB000B100C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		48FF1FD925802CCB000B100C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48FF1FDB25802CDB000B100C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FF1FDE25802CDB000B100C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48FF1FE025802CDB000B100C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48FF1FE725802D0A000B100C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48FF200125822325000B100C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		951CBB6B417878200E7F2990 /* Pods-Cyberguide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cyberguide.release.xcconfig"; path = "Target Support Files/Pods-Cyberguide/Pods-Cyberguide.release.xcconfig"; sourceTree = "<group>"; };
 		E2DDA1D4133C8AE983F87DEC /* Pods_Cyberguide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cyberguide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,14 +83,42 @@
 			children = (
 				48FF1FD225802CCB000B100C /* AppDelegate.swift */,
 				48FF1FD425802CCB000B100C /* SceneDelegate.swift */,
-				48FF1FD625802CCB000B100C /* ViewController.swift */,
-				48FF1FD825802CCB000B100C /* Main.storyboard */,
+				48FF1FFE2582221C000B100C /* Models */,
+				48FF1FFF25822227000B100C /* Views */,
+				48FF20002582222E000B100C /* Controllers */,
 				48FF1FDB25802CDB000B100C /* Assets.xcassets */,
 				48FF1FDD25802CDB000B100C /* LaunchScreen.storyboard */,
 				48FF1FE025802CDB000B100C /* Info.plist */,
 				48FF1FE725802D0A000B100C /* GoogleService-Info.plist */,
+				48FF200125822325000B100C /* Constants.swift */,
 			);
 			path = Cyberguide;
+			sourceTree = "<group>";
+		};
+		48FF1FFE2582221C000B100C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48FF1FFF25822227000B100C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48FF1FD825802CCB000B100C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48FF20002582222E000B100C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48FF1FD625802CCB000B100C /* WelcomeViewController.swift */,
+				48409C13258238BE00835908 /* LoginViewController.swift */,
+				48409C1625823B2100835908 /* RegisterViewController.swift */,
+				48409C192582596D00835908 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		4C1DEF20837D513C88E36B0C /* Pods */ = {
@@ -91,7 +127,6 @@
 				127B4358A69FDDBED5F9A8FA /* Pods-Cyberguide.debug.xcconfig */,
 				951CBB6B417878200E7F2990 /* Pods-Cyberguide.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,9 +245,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FF1FD725802CCB000B100C /* ViewController.swift in Sources */,
+				48409C1A2582596D00835908 /* MainViewController.swift in Sources */,
+				48FF1FD725802CCB000B100C /* WelcomeViewController.swift in Sources */,
 				48FF1FD325802CCB000B100C /* AppDelegate.swift in Sources */,
 				48FF1FD525802CCB000B100C /* SceneDelegate.swift in Sources */,
+				48409C1725823B2100835908 /* RegisterViewController.swift in Sources */,
+				48409C14258238BE00835908 /* LoginViewController.swift in Sources */,
+				48FF200225822325000B100C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertpelka.Cyberguide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,7 +429,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertpelka.Cyberguide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
