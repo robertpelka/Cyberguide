@@ -116,7 +116,7 @@
                                                 <rect key="frame" x="0.0" y="121.33333333333334" width="301" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIRM PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aL-e6-uom">
                                                 <rect key="frame" x="0.0" y="165.33333333333334" width="242.66666666666666" height="28.666666666666657"/>
@@ -128,7 +128,7 @@
                                                 <rect key="frame" x="0.0" y="204.00000000000003" width="301" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -145,6 +145,9 @@
                                         <state key="normal" title="SIGN UP" backgroundImage="loginButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signupButtonPressed:" destination="76z-bb-ZPe" eventType="touchUpInside" id="LxP-oz-l7r"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -229,7 +232,7 @@
                                                 <rect key="frame" x="0.0" y="121.33333333333331" width="301" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -246,7 +249,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="7El-J6-bg7" kind="presentation" modalPresentationStyle="fullScreen" id="fCC-Fz-rsi"/>
+                                            <action selector="loginButtonPressed:" destination="jjs-14-0cK" eventType="touchUpInside" id="zxv-mb-Eg1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -427,7 +430,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fCC-Fz-rsi"/>
+        <segue reference="65S-gm-mG1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="301" height="81"/>

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -19,15 +20,23 @@ class LoginViewController: UIViewController {
         passwordTextfield.layer.borderWidth = 2.0
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        if let email = emailTextfield.text,
+           let password = passwordTextfield.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    DispatchQueue.main.async {
+                        let myAlert: UIAlertController = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
+                        let cancel = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        myAlert.addAction(cancel)
+                        self.present(myAlert, animated: true, completion: nil)
+                    }
+                }
+                else {
+                    self.performSegue(withIdentifier: K.Segues.loginSegue, sender: self)
+                }
+            }
+        }
     }
-    */
-
+    
 }
