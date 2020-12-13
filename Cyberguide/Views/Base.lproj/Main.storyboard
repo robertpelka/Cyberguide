@@ -347,7 +347,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dqh-kL-Nee">
-                                        <rect key="frame" x="27.666666666666657" y="156.33333333333334" width="320" height="456.66666666666663"/>
+                                        <rect key="frame" x="20" y="156.33333333333334" width="335" height="456.66666666666663"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKa-hE-8CU" userLabel="BottomView">
@@ -383,6 +383,9 @@
                                                                 <state key="normal" title="ADD" backgroundImage="addButton">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="addButtonPressed:" destination="7El-J6-bg7" eventType="touchUpInside" id="vLd-pt-Bj3"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -409,7 +412,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="lKa-hE-8CU" secondAttribute="trailing" id="1oR-5E-XH1"/>
+                                    <constraint firstAttribute="trailing" secondItem="dqh-kL-Nee" secondAttribute="trailing" constant="20" id="3PM-op-g0j"/>
                                     <constraint firstItem="lKa-hE-8CU" firstAttribute="leading" secondItem="fWa-zB-m3s" secondAttribute="leading" id="97X-XX-5bV"/>
+                                    <constraint firstItem="dqh-kL-Nee" firstAttribute="leading" secondItem="fWa-zB-m3s" secondAttribute="leading" constant="20" id="rFq-uo-RDg"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -423,6 +428,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ctj-Mb-1r3"/>
+                    <connections>
+                        <outlet property="adviceTextField" destination="8Mn-A0-Dhz" id="GDe-h5-8DT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6b-ah-tPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

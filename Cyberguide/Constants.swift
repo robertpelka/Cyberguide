@@ -15,4 +15,9 @@ struct K {
         static let blue = "BrandBlue"
         static let red = "BrandRed"
     }
+    struct Firestore {
+        static let collectionName = "advices"
+        static let adviceField = "advice"
+        static let votesField = "votes"
+    }
 }
