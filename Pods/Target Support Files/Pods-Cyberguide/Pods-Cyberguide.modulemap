@@ -1,0 +1,6 @@
+framework module Pods_Cyberguide {
+  umbrella header "Pods-Cyberguide-umbrella.h"
+
+  export *
+  module * { export * }
+}
