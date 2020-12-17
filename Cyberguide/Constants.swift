@@ -17,7 +17,11 @@ struct K {
     }
     struct Firestore {
         static let collectionName = "advices"
-        static let adviceField = "advice"
+        static let textField = "advice"
         static let votesField = "votes"
+    }
+    struct Cell {
+        static let cellIdentifier = "ReusableCell"
+        static let cellNibName = "AdviceCell"
     }
 }

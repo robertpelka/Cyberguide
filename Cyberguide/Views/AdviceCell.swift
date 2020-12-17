@@ -9,6 +9,9 @@ import UIKit
 
 class AdviceCell: UITableViewCell {
 
+    @IBOutlet weak var adviceText: UILabel!
+    @IBOutlet weak var votes: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

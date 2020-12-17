@@ -12,6 +12,7 @@
 		48409C1A2582596D00835908 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48409C192582596D00835908 /* MainViewController.swift */; };
 		48409C242586AF6A00835908 /* AdviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48409C222586AF6A00835908 /* AdviceCell.swift */; };
 		48409C252586AF6A00835908 /* AdviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48409C232586AF6A00835908 /* AdviceCell.xib */; };
+		48409C28258C018200835908 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48409C27258C018200835908 /* Advice.swift */; };
 		48FF1FD325802CCB000B100C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD225802CCB000B100C /* AppDelegate.swift */; };
 		48FF1FD525802CCB000B100C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD425802CCB000B100C /* SceneDelegate.swift */; };
 		48FF1FD725802CCB000B100C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF1FD625802CCB000B100C /* WelcomeViewController.swift */; };
@@ -30,6 +31,7 @@
 		48409C192582596D00835908 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		48409C222586AF6A00835908 /* AdviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceCell.swift; sourceTree = "<group>"; };
 		48409C232586AF6A00835908 /* AdviceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdviceCell.xib; sourceTree = "<group>"; };
+		48409C27258C018200835908 /* Advice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		48FF1FCF25802CCB000B100C /* Cyberguide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cyberguide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FF1FD225802CCB000B100C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FF1FD425802CCB000B100C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		48FF1FFE2582221C000B100C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				48409C27258C018200835908 /* Advice.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				48409C1A2582596D00835908 /* MainViewController.swift in Sources */,
 				48FF1FD725802CCB000B100C /* WelcomeViewController.swift in Sources */,
+				48409C28258C018200835908 /* Advice.swift in Sources */,
 				48FF1FD325802CCB000B100C /* AppDelegate.swift in Sources */,
 				48FF1FD525802CCB000B100C /* SceneDelegate.swift in Sources */,
 				48409C1725823B2100835908 /* RegisterViewController.swift in Sources */,
