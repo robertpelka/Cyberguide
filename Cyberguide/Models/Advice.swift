@@ -8,6 +8,7 @@
 import Foundation
 
 struct Advice {
-    let text: String
-    let votes: Int
+    let id: String
+    var text: String
+    var votes: Int
 }

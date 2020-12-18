@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 class MainViewController: UIViewController {
-
+    
     @IBOutlet weak var adviceTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,16 +18,16 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(UINib(nibName: K.Cell.cellNibName, bundle: nil), forCellReuseIdentifier: K.Cell.cellIdentifier)
         loadAdvices()
     }
     
     func loadAdvices() {
-        
         db.collection(K.Firestore.collectionName)
-            .order(by: K.Firestore.votesField)
+            .order(by: K.Firestore.votesField, descending: true)
             .addSnapshotListener { (querySnapshot, error) in
                 self.advices = []
                 if let e = error {
@@ -39,7 +39,8 @@ class MainViewController: UIViewController {
                             let data = document.data()
                             if let text = data[K.Firestore.textField] as? String,
                                let votes = data[K.Firestore.votesField] as? Int {
-                                let newAdvice = Advice(text: text, votes: votes)
+                                let id = document.documentID
+                                let newAdvice = Advice(id: id, text: text, votes: votes)
                                 self.advices.append(newAdvice)
                                 DispatchQueue.main.async {
                                     self.tableView.reloadData()
@@ -49,7 +50,6 @@ class MainViewController: UIViewController {
                     }
                 }
             }
-        
     }
     
     @IBAction func addButtonPressed(_ sender: UIButton) {
@@ -72,13 +72,11 @@ class MainViewController: UIViewController {
             }
         }
     }
-    
 }
 
 //MARK: - UITableViewDataSource
 
 extension MainViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return advices.count
     }
@@ -87,8 +85,46 @@ extension MainViewController: UITableViewDataSource {
         let advice = advices[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Cell.cellIdentifier, for: indexPath) as! AdviceCell
         cell.adviceText.text = advice.text
-        cell.votes.text = String(advice.votes)
+        if(advice.votes > 0) {
+            cell.votes.text = "+" + String(advice.votes)
+            cell.votes.textColor = UIColor(named: K.Colors.green)
+        }
+        else if(advice.votes < 0) {
+            cell.votes.text = String(advice.votes)
+            cell.votes.textColor = UIColor(named: K.Colors.red)
+        }
+        else {
+            cell.votes.text = String(advice.votes)
+            cell.votes.textColor = UIColor.black
+        }
         return cell
     }
+}
+
+//MARK: - UITableViewController
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView,
+                   leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+    ->   UISwipeActionsConfiguration? {
+        let voteGood = UIContextualAction(style: .normal, title: "-1") { (contextualAction, view, boolValue) in
+            self.db.collection(K.Firestore.collectionName).document(self.advices[indexPath.row].id).updateData([K.Firestore.votesField: Int(self.advices[indexPath.row].votes-1)])
+        }
+        voteGood.backgroundColor = UIColor(named: K.Colors.red)
+        let swipeActions = UISwipeActionsConfiguration(actions: [voteGood])
+        
+        return swipeActions
+    }
     
+    func tableView(_ tableView: UITableView,
+                   trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+    ->   UISwipeActionsConfiguration? {
+        let voteGood = UIContextualAction(style: .normal, title: "+1") { (contextualAction, view, boolValue) in
+            self.db.collection(K.Firestore.collectionName).document(self.advices[indexPath.row].id).updateData([K.Firestore.votesField: Int(self.advices[indexPath.row].votes+1)])
+        }
+        voteGood.backgroundColor = UIColor(named: K.Colors.green)
+        let swipeActions = UISwipeActionsConfiguration(actions: [voteGood])
+        
+        return swipeActions
+    }
 }
