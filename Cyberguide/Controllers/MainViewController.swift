@@ -66,6 +66,7 @@ class MainViewController: UIViewController {
                     else {
                         DispatchQueue.main.async {
                             self.adviceTextField.text = ""
+                            self.view.endEditing(true)
                         }
                     }
                 }
